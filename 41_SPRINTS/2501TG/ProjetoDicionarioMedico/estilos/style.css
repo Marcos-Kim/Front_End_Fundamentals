@@ -1,0 +1,57 @@
+/* Resetando margens, paddings e bordas */
+* {
+    margin: 0; /* Difine a margem externa de um elemento */
+    padding: 0; /* A propriedade "padding" define o espaço interno entre o conteúdo do elemento e suas bordas */
+    border: 0;
+    box-sizing: border-box; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+header {
+    background-color: lightgray;    
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    
+}
+
+.container > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
+    gap: 15px 20px;
+    
+}
+
+.container > div > h2 > a {
+    text-decoration: none;
+}
+
+img {
+    width: 90vh;
+    height: 100vh;
+}
+
+footer > p {
+    font-family: 'Times New Roman', Times, serif;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+    border: 1px black;
+    background-color: rgba(0, 76, 255, 0.363);
+
+}
+
+script {
+    b
+}
+
+
+/* Atalho para Comentar Ctrl + K + C */
+/* Atalho para Descomentar Crtl + K + U *
