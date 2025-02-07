@@ -1,0 +1,241 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Vinyl&display=swap');
+
+  
+  
+
+
+.header-logo{ 
+  text-align: center;
+  align-items: center; /* Alinha verticalmente no centro */
+  
+ 
+  
+}
+
+.logo {
+ display: block;
+  width: 125px; /* Defina o tamanho do logo conforme necessário */
+ height: 100%;
+ padding: 0;
+  margin: 0;
+  list-style-type: none;
+ text-align: right;
+ margin-top: -10px;
+ justify-content: space-between;
+  margin-right: 100%; /* Espaço entre o logo e o título */
+}
+
+.title {
+  font-size: 24px;
+  margin: 0;
+}
+
+
+nav{
+    position: fixed; /* Fixa o nav na tela */
+    top: 0;          /* Fica no topo */
+    left: 0;
+    width: 100%;     /* Ocupa toda a largura da tela */
+    background-color: #abb3b8; /* Cor de fundo */
+    margin: 10px;
+  font-size: small;
+    text-align: center;
+    z-index: 500; /* Garante que o nav fique sobre outros elementos */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar um efeito de profundidade */
+      border-bottom: 3px solid #ddd; /* Adiciona uma borda abaixo do nav */
+      border-radius: 0 0 10px 10px; /* Arredonda a parte inferior do nav */
+      letter-spacing: 5px; /* Aumenta o espaçamento entre as letras */
+  
+    
+  }
+
+ 
+  a{
+    font-size: x-large;
+    text-decoration: none;
+    color: #050404;
+    
+  }
+
+
+  nav a:hover{
+    background-color: #aec0e0; /* Cor de fundo quando passar o mouse */
+
+  }
+
+h2{
+  
+ border-radius: 0 0 10 10px;;
+display: block;
+font-size: larger;
+width: 80%;
+display: inline-block; /* Faz o texto ficar ao lado da imagem */
+flex-direction:70% ;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+dd,dl{
+    grid-template-columns: 1fr 1fr;
+    transform: scale(1.1);
+text-align: center;
+max-width: 70%;
+width: 50%;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+height:40% ;
+display: inline-block; /* Faz o texto ficar ao lado da imagem */
+  width: 40%; /* Define a largura do texto */
+justify-content: center;
+color:rgba(9, 15, 15, 0.712);
+/*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  Sombra para dar um efeito de profundidade */
+      /*border-bottom: 4px solid #998c8c;  Adiciona uma borda abaixo do nav */
+      border-radius: 0 0 10 10px; /* Arredonda a parte inferior do nav */
+      margin-top: 200px;
+    
+
+  }
+
+
+ 
+
+
+
+  body{
+background-color: rgb(170, 185, 185);
+ /* overflow: hidden;Esconde qualquer conteúdo que ultrapasse a altura da tela */
+
+  }
+    .abasia1{
+
+      max-width: 800px; /* Ajusta a largura da imagem */
+      float: right;
+    width: 50%;
+    height:20% ;
+    margin-top: -50%;
+    border-bottom: 4px solid #0e3c53; /* Adiciona uma borda abaixo   */
+    /* border-radius:  80px; Arredonda a parte inferior do  */
+    margin-top: -20%;
+
+    }
+
+  .abasia{
+    max-width: 800px; /* Ajusta a largura da imagem */
+  float: right;
+width: 50%;
+height:20% ;
+margin-top: -50%;
+border-bottom: 4px solid #0e3c53; /* Adiciona uma borda abaixo   */
+/* border-radius:  80px; Arredonda a parte inferior do  */
+margin-top: -20%;
+
+  }
+
+
+  .abasia3{
+
+    max-width: 800px; /* Ajusta a largura da imagem */
+    float: right;
+  width: 50%;
+  height:20% ;
+  margin-top: -50%;
+  /* border-radius:  80px; Arredonda a parte inferior do  */
+  margin-top: -20%;
+
+
+
+  }
+  .abasia2{
+
+    max-width: 800px; /* Ajusta a largura da imagem */
+    float: right;
+  width: 50%;
+  height:20% ;
+  margin-top: -50%;
+  border-bottom: 4px solid #0e3c53; /* Adiciona uma borda abaixo   */
+  /* border-radius:  80px; Arredonda a parte inferior do  */
+  margin-top: -20%;
+  
+
+  }
+
+
+
+  .abasia4{
+
+
+    max-width: 800px; /* Ajusta a largura da imagem */
+    float: right;
+  width: 50%;
+  height:20% ;
+  margin-top: -50%;
+  border-bottom: 4px solid #0e3c53; /* Adiciona uma borda abaixo   */
+  /* border-radius:  80px; Arredonda a parte inferior do  */
+  margin-top: -20%;
+
+
+  }
+
+
+
+
+.abasia11{
+
+  max-width: 800px; /* Ajusta a largura da imagem */
+  float: right;
+width: 50%;
+height:20% ;
+margin-top: -50%;
+border-bottom: 4px solid #0e3c53; /* Adiciona uma borda abaixo   */
+/* border-radius:  80px; Arredonda a parte inferior do  */
+margin-top: -20%;
+
+
+}
+.abasia6{
+  max-width: 800px; /* Ajusta a largura da imagem */
+  float: right;
+width: 50%;
+height:20% ;
+margin-top: -50%;
+border-bottom: 4px solid #0e3c53; /* Adiciona uma borda abaixo   */
+/* border-radius:  80px; Arredonda a parte inferior do  */
+margin-top: -20%;
+
+}
+
+
+.abasia7{
+
+  max-width: 800px; /* Ajusta a largura da imagem */
+  float: right;
+width: 50%;
+height:20% ;
+margin-top: -50%;
+border-bottom: 4px solid #0e3c53; /* Adiciona uma borda abaixo   */
+/* border-radius:  80px; Arredonda a parte inferior do  */
+margin-top: -20%;
+
+
+}
+
+.Home{
+  width: 25%;
+  height:-80% ;
+  display: block;
+  margin-top: -130px;
+  
+}
+ 
+
+
+footer {
+position: fixed;
+  bottom: 0; /* Posiciona o rodapé na parte inferior */
+  width: 100%; /* Faz o rodapé ocupar toda a largura da página */
+  background-color: #3b3737;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
