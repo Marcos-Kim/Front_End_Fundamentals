@@ -1,0 +1,15 @@
+/*div {
+    font-family: 'Courier New';
+    width: 100%;
+    display: flex;
+    /* grid-template-columns: 33% 33% 33%;*
+  display: inline-block;
+}
+*/
+
+element class div
+  display flex
+
+.mycontainer > div {
+  width:50%;
+}
