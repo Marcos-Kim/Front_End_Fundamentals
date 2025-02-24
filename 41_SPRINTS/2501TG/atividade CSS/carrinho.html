@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="carrinho.css">
+    <title>Carrinho de Compras</title>
+    <header>
+     
+        <div class="sidebar">
+            <ul>
+                <li><a href="./nv.html">Pagina Inicial</a></li>
+                
+               <br>
+
+               <br>
+                <li><a href="./carrinho.html">Loja Peludinhos 🐾🤍!</a></li>
+            </ul>
+        </div>
+
+        
+
+    <style>
+        /* Estilo Básico */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+        }
+        .product {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            text-align: center;
+        }
+        .product img {
+            width: 100px;
+            height: 100px;
+        }
+        .cart {
+            margin-top: 40px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .cart ul {
+            list-style: none;
+            padding: 0;
+        }
+        .cart li {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        .cart button {
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 5px 10px;
+        }
+        .cart button:hover {
+            background-color: #e60000;
+        }
+        .cart-summary {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .cart-summary p {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .checkout-btn {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    
+
+    <!-- Lista de Produtos -->
+    <div class="product-list">
+        <div class="product">
+            <img src="./imagens/racao.png" alt="Ração para Cães">
+            <h3>Ração para Cães</h3>
+            <p>R$ 50,00</p>
+            <button onclick="addToCart('Ração para Cães', 50.00)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product">
+            <img src="./imagens/brinquedo_para_caes_e_gatos_halteres_m_721_2_f4ff7003fcad91b91a8374ec37fdccf8.webp" alt="Brinquedo para Gatos">
+            <h3>Brinquedo para Gatos</h3>
+            <p>R$ 25,00</p>
+            <button onclick="addToCart('Brinquedo para Gatos', 25.00)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product">
+            <img src="./imagens/cama.png" alt="Cama para Pet">
+            <h3>Cama para Pet</h3>
+            <p>R$ 80,00</p>
+            <button onclick="addToCart('Cama para Pet', 80.00)">Adicionar ao Carrinho</button>
+        </div>
+
+
+        <div class="product">
+            <img src="./imagens/kit shampoo.jpg" alt="Kit-Shampoo">
+            <h3>Kit de shampoo</h3>
+            <p>R$ 40,00</p>
+            <button onclick="addToCart('Cama para Pet', 40.00)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product">
+            <img src="./imagens/Roupa-de-frio-para-cachorro-dupla-face-impermeavel.webp" alt="Roupa de Frio Pet">
+            <h3>Roupa de Frio</h3>
+            <p>R$ 80,00</p>
+            <button onclick="addToCart('Roupa de Frio', 80.00)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product">
+            <img src="./imagens/mordedor.jpg" alt="Mordedor">
+            <h3>Mordedor</h3>
+            <p>R$ 20,00</p>
+            <button onclick= "addToCart('Mordedor', 20.00)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product">
+            <img src="./imagens/areia para gato.webp" alt="Areia para gato">
+            <h3>Areia para gato</h3>
+            <p>R$ 40,00</p>
+            <button onclick="addToCart('Cama para Pet', 40.00)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product">
+            <img src="./imagens/escova para gato.jpg" alt="Escova para gatos.">
+            <h3>
+                Escola para gato.
+            </h3>
+            <p>R$ 40,00</p>
+            <button onclick="addToCart('Ecova para gatos.', 40.00)">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+
+    <!-- Carrinho de Compras -->
+    <div class="cart">
+        <center><h1>Carrinho <br>de compras</h1></center>
+        <ul id="cart-list">
+            <!-- Itens do carrinho aparecerão aqui -->
+        </ul>
+        <div class="cart-summary">
+            <p>Total: R$ <span id="total-price">0,00</span></p>
+            <button class="checkout-btn" onclick="checkout()">Finalizar Compra</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Carrinho de compras
+    let cart = [];
+
+    // Função para adicionar produto ao carrinho
+    function addToCart(productName, productPrice) {
+        const product = { name: productName, price: productPrice };
+        cart.push(product);
+        updateCart();
+    }
+
+    // Função para remover produto do carrinho
+    function removeFromCart(index) {
+        cart.splice(index, 1);
+        updateCart();
+    }
+
+    // Função para atualizar o carrinho
+    function updateCart() {
+        const cartList = document.getElementById("cart-list");
+        const totalPriceElement = document.getElementById("total-price");
+        cartList.innerHTML = "";
+        let total = 0;
+
+        cart.forEach((item, index) => {
+            const li = document.createElement("li");
+            li.innerHTML = `${item.name} - R$ ${item.price.toFixed(2)} <button onclick="removeFromCart(${index})">Remover</button>`;
+            cartList.appendChild(li);
+            total += item.price;
+        });
+
+        totalPriceElement.textContent = total.toFixed(2);
+    }
+
+    // Função para finalizar a compra
+    function checkout() {
+        if (cart.length === 0) {
+            alert("O carrinho está vazio. Adicione produtos antes de finalizar a compra.");
+        } else {
+            alert("Compra finalizada com sucesso! (Integração com pagamento pode ser feita aqui)");
+            // Aqui você pode integrar com sistemas de pagamento como PayPal, Stripe, etc.
+        }
+    }
+</script>
+
+
+</body>
+
+<br>
+
+
+<br>
+
+
+<br>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer>  <p>© 2025 Peludinhos. Todos os direitos reservados.</p></footer>
+</html>
