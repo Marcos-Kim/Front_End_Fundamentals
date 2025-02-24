@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="petshop">
+    <meta name="keyword" content="pet shop, pet, veterinario, ração, bichos">
+    <link rel="stylesheet" type="text/css"href="bootstrap/css/bootstrap.css"/>
+    <title>Pet Shop</title>
+</head>
+<body>
+   
+    <div class="container">
+        <!-- <img class="img-fuid" src="img/banner-topo.png" alt=""> -->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">
+            <img src="img/logo.png" alt="">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+            data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" 
+            aria-expanded="false" aria-label="Alterna a navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html"> Home <span class="sr-only">(página atual)</span></a>
+                        <!-- sr-only serve para ocultar informações para usuários de leitor de telas -->
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Pets
+                        </a>
+                
+                    <!-- O atributo aria-labelledby no HTML é usado para melhorar a acessibilidade
+                    de elementos em uma página web. Ele permite que você associe um elemento a um
+                    ou mais elementos que fornecem uma descrição ou rótulo para ele. Isso é essencialmente
+                    útil para tecnologias assistivas, como leitores de tela, que podem usar essas informações
+                    para fornecer uma melhor experiência ao usuário.-->
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                       <a class="dropdown-item" href="caes.html">Cães</a>
+                       <a class="dropdown-item" href="gatos.html">Gatos</a>
+                       <a class="dropdown-item" href="peixes.html">Peixes</a>
+                       <a class="dropdown-item" href="aves.html">Aves</a>
+                       <a class="dropdown-item" href="repteis.html">Répteis</a>
+                    </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Serviços</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="banhoetosahtml">Banho & Tosa</a>
+                            <a class="dropdown-item" href="daycare.html">Daycare</a>
+                            <a class="dropdown-item" href="vacinacao.html">Vacinação</a>
+                            <a class="dropdown-item" href="castracao.html">Castração</a>
+                            <a class="dropdown-item" href="Consulta.html">Consulta</a>
+                            <a class="dropdown-item" href="microchipagem.html">Microchipagem</a>
+                        </div>
+                      </li>
+
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Loja</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="racoes.html">Rações & Petiscos</a>
+                            <a class="dropdown-item" href="vestuario.html">Vestuário</a>
+                            <a class="dropdown-item" href="higiene.html">Higiene</a>
+                            <a class="dropdown-item" href="brinquedos.html">Brinquedos</a>
+                            <a class="dropdown-item" href="casaecama.html">Casas & Camas</a>
+                            <a class="dropdown-item" href="aquarismo.html">Aquarismo</a>
+                        </div>
+                      </li>
+
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Galeria</a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="fotos.html">Fotos</a>
+                          <a class="dropdown-item" href="video.html">Vídeo</a>
+                      </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contatos.html">Contatos</a>
+                    </li>
+                </ul>
+
+                <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                <button class="btn btn-outline-success my-2-my-sm-0" type="submit">Pesquisar</button>
+                </form>
+            </div>
+        </nav>
+
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <!--O atributo data-ride="carousel" é usado para declarar que o carrossel vai começar
+            a animação assim que a página carregar-->
+
+            <div class="carousel-inner">
+                <!--o carousel-inner é um recurso de slideshow da Biblioteca Bootstrap que permite
+                mostrar vários conteúdos de maneira horizontal, 
+                como em um carrossel de parque de diversões-->
+                <div class="carousel-item active">
+                <img class="d-block w-100" src="img/pet1.jfif" alt="">
+                </div>
+           
+                <div class="carousel-item">
+                <!--<div class="carousel-item active">-->
+                <img class="d-block w-100" src="img/pet2.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                <img class="d-block w-100" src="img/pet3.jpg" alt="">
+                </div>
+            </div>
+            
+        
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <!-- O atributo aria-hidden é utilizado para esconder conteúdo não interativo da API de acessibilidade. -->
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+        <!-- Fim do banner -->
+
+        <div class="container bg-light">
+            <h1 class="text-center pt-3 pb-3">Aqui você encontra o melhor para o seu pet.</h1>
+            <!-- INÍCIO DOS CARDS -->
+             <!-- A tag section é utilizada para marcar as secções de conteúdo de uma página.
+              O principal objetivo é agrupar de forma lógica o conteúdo, separando a informação em áreas diferentes.-->
+            <section class="card-deck text-center pb-3">
+                <article class="card">
+                    <img class="card-img-top" src="img/pet4.jpg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Aquarismo</h5>
+                        <p class="card-text">Aquarismo de água doce e salgada.</p>
+                            <a class="btn btn-primary" href="aquarismo.html">Saiba mais</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <img class="card-img-top" src="img/pet6.webp" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Banho e tosa</h5>
+                        <p class="card-text">Agende o banho e tosa do seu pet.</p>
+                            <a class="btn btn-primary" href="banhoetosa.html">Saiba mais</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <img class="card-img-top" src="img/pet5.jfif" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Loja</h5>
+                        <p class="card-text">Trabalhamos com as principais marcas do mercado nacional e internacional.</p>
+                            <a class="btn btn-primary" href="racoes.html">Saiba mais</a>
+                    </div>
+                </article>
+            </section>
+        </div> 
+        <!-- FIM DO CARD -->
+
+      <!--INICIO DO FOOTER-->
+      <footer class="container bg-dark text-light">
+        <section class="row text-center pt-3 pb-3">
+          <div class="col-sm-4">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.7114260777735!2d-46.624094025931754!3d-23.542879378812454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce58e2bc6fdbb5%3A0x56e5728408f35323!2sEscola%20SENAI%20%22Roberto%20Simonsen%22!5e0!3m2!1spt-BR!2sbr!4v1740423917394!5m2!1spt-BR!2sbr" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          </div>
+
+          <div class="col-sm-4">
+            <img src="img/local.png" alt="">
+            <p>Nome da Rua, 123 </br>
+            Nome do bairro <br>
+            São Paulo-SP
+            </p>
+
+            <img src="img/email.png" alt="">
+            <p> seuemail@seuemail.com</p>
+          </div>
+
+          <div class="col-sm-4">
+            <img src="img/whatsapp.png" alt="">
+            <p> (11) 91234-1234</p>
+
+            <img src="img/fone.png" alt="">
+            <p>(11) 91234-1234</p>
+
+            <a href=""><img target="_blank" src="img/youtube.png" alt=""></a>
+            <a href=""><img target="_blank" src="img/instagram.png" alt=""></a>
+            <a href=""><img target="_blank" src="img/linkedin.png" alt=""></a>
+            <a href=""><img target="_blank" src="img/logox.png" alt=""></a>
+            <a href=""><img target="_blank" src="img/facebook.png" alt=""></a>
+          </div>
+        </section>
+      </footer>
+
+      <div class="container bg-light text-center pt-3 pb-2">
+        <p> Curso Senai Front-End. Somente para fins educativos.</p>
+        <p>Produzido por eumesmo.com</p>
+      </div>
+      </div>
+    
+    <script src="bootstrap/jquery-3.3.1.slim.min.js"></script>
+      <script src="bootstrap/popper.min.js"></script> <!--posicionar os elementos: como menu-->
+      <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    </div>
+    
+</body>
+</html>
