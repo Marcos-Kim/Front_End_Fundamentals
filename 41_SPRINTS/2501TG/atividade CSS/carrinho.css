@@ -1,0 +1,146 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url(./imagens/teste\ 4.jpg);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.cart, .contact {
+    width: 48%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.cart-items {
+    margin-bottom: 20px;
+}
+
+.cart-items div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    width: 80%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #218838;
+}
+
+
+
+
+h1,h2 {
+ 
+text-align: justify;
+ 
+ }
+ 
+
+
+ 
+ nav{
+
+    position: fixed;
+    
+    }
+    
+
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    
+    .sidebar {
+        height: 100%;
+        width: 130px; /* Largura do menu */
+        position: fixed; /* Fixa o menu à esquerda */
+        top: 0;
+        left: 0;
+        background-color: #e0d1d1;
+        background-image: url(./imagens/teste3.jpg);
+        padding-top: 20px;
+    }
+    
+
+    
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    color: rgb(8, 7, 7);
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+
+
+
+.sidebar ul li a:hover {
+    background-color: #b8a5a5; /* Cor ao passar o mouse */
+}
+
+/* Estilo para o conteúdo principal */
+.content {
+    margin-left: 250px; /* Deixa espaço para o menu lateral */
+    padding: 20px;
+}
+
+
+footer {
+    background-color: #ad9b9b;
+    color: rgb(8, 6, 6);
+    padding: 5px;
+    text-align: center;
+    font-size: 14px;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+.footer-links {
+    margin-bottom: 15px;
+}
