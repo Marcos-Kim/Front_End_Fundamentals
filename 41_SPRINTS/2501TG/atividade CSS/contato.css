@@ -1,0 +1,251 @@
+nav{
+
+    position: fixed;
+    
+    }
+    
+    
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+
+
+
+
+/* Estilo básico para o menu lateral */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px; /* Largura do menu */
+    position: fixed; /* Fixa o menu à esquerda */
+    top: 0;
+    left: 0;
+    background-color: #e0d1d1;
+    background-image: url(./imagens/teste3.jpg);
+    padding-top: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    color: rgb(8, 7, 7);
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background-color: #b8a5a5; /* Cor ao passar o mouse */
+}
+
+/* Estilo para o conteúdo principal */
+.content {
+    margin-left: 250px; /* Deixa espaço para o menu lateral */
+    padding: 20px;
+}
+
+
+body{
+
+background-image:url(./imagens/teste\ 4.jpg);
+
+}
+
+
+
+h1,h2 {
+
+font-size: x-large white;
+background-color: rgb(231, 222, 222);
+
+
+}
+
+
+
+  body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+        .cart, .contact {
+            width: 48%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .cart-items {
+            margin-bottom: 20px;
+        }
+
+        .cart-items div {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .contact button:hover {
+            background-color: #218838;
+        }
+
+         
+
+
+
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+        }
+        .product {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            text-align: center;
+        }
+        .product img {
+            width: 100px;
+            height: 100px;
+        }
+        .cart {
+            margin-top: 40px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .cart ul {
+            list-style: none;
+            padding: 0;
+        }
+        .cart li {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        .cart button {
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 5px 10px;
+        }
+        .cart button:hover {
+            background-color: #e60000;
+        }
+        .cart-summary {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .cart-summary p {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .checkout-btn {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+
+
+        .final-pagina{
+            position: fixed; /* Fixa o footer na parte inferior da página */
+            left: 250px;
+            bottom: 0;
+            width: 100%; /* Faz o footer ocupar toda a largura */
+            background-color: #ad9b9b;
+    color: rgb(8, 6, 6);
+    padding: 5px;
+            text-align: center;
+        
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        /* Estilos gerais para o corpo da página */
+        .final-pagina{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos do conteúdo */
+.conteudo {
+    padding-bottom: 50px; /* Espaço extra para não sobrepor o footer */
+}
